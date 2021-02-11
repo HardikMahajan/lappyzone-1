@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Inspiron Cart - Lappy Zone | Ecommerce site</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,423;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,423;1,500;1,600;1,700&family=Roboto+Slab:wght@100;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="pics/iconfinder_cart_1543351.png">
+  </head>
+  <body>
+    <!-----------Header------------------>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="https://lappyzone-1.hardikmahajan1.repl.co/"><img src="pics/Lappyzone.jpeg" width="200px" ></a>
+          </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="https://lappyzone-1.hardikmahajan1.repl.co/">Home</li>
+            <li><a href="https://lappyzone-1.hardikmahajan1.repl.co/products1.html">Products</a></li>
+            <li><a href="https://lappyzone-1.hardikmahajan1.repl.co/about.html">About</a></li>
+            <li><a href="https://lappyzone-1.hardikmahajan1.repl.co/accounts.html">Account</a></li>
+            <li><a href="https://lappyzone-1.hardikmahajan1.repl.co/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="https://lappyzone-1.hardikmahajan1.repl.co/cart.html"><img src="pics/iconfinder_cart_1543351.png" width="30px" height="30px"></a>
+        <img src="pics/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+      </div>
+    </div>
+    <!--------------Header Ends here----------------->
+
+    <!----------Cart------------->
+
+    <div class="small-container cart-page">
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="https://lappyzone-1.hardikmahajan1.repl.co/pics/swift%20_3_sf314_53g/swift%20_3_sf314_53g.png">
+              <div>
+                <p>Acer Swift 3 SF314-53G</p>
+                <small><i class="fa fa-inr"></i>  62,500</small>
+                <br>
+                <a href="https://lappyzone-1.hardikmahajan1.repl.co/cart.html">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1"></td>
+          <td><i class="fa fa-inr"></i>62,500</td>
+        </tr>
+      </table>
+
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td><i class="fa fa-inr"></i>  62,500</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td><i class="fa fa-inr"></i>  499</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td><i class="fa fa-inr"></i>  62,999</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+    
+    <!----------Cart ends here------------->
+
+    <!------------footer------------->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download our App</h3>
+            <p>Download our App for Android and IOS Mobiles</p>
+            <div class="app-logo">
+              <a href="https://play.google.com/store?hl=en"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"></a>
+              <a href="https://www.apple.com/ios/app-store/"><img src="https://miro.medium.com/max/8982/0*1-msaTEYYCzIXAYC."></a>
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="pics/Lappyzone.jpeg">
+            <p>Our Perpose Is To Sustainably Make the Pleasure and Benefits of Laptop and its Accessories to the Many</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="">Coupons</a></li>
+              <li><a href="">Blog Post</a></li>
+              <li><a href="">Return Policy</a></li>
+              <li><a href="">Join Affiliate</a></li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Instagram</a></li>
+              <li><a href="">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - Lappy Zone</p>
+      </div>
+    </div>
+    <!------------footer ends here------------->
+
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+          MenuItems.style.maxHeight = "200px";
+        }
+        else{
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <script src="script.js">
+      
+    </script>
+  </body>
+</html>
